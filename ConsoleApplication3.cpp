@@ -15,7 +15,15 @@ void bubbleSort(int arr[], int n)
 }
 int main()
 {
-	int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+	int arr[10]; 
+	int arrNum;
+
+		for (int i = 0; i != 10; i++)
+		{
+			cin >> arrNum;
+			arr[i] = arrNum;
+		}
+			
 	int n = sizeof(arr)/sizeof(arr[0]); bubbleSort(arr, n);
 	
 	cout << "Sorted array: " << endl;
